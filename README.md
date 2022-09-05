@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation Docker
+
+```bash
+$ docker compose up (-d optional)
+```
+-d  start docker in the background
+
+
 ## Available Scripts
 
 In the project directory, you can run:

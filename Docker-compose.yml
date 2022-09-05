@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    image: "node:18-alpine"
+    container_name: mangatheque-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app
+      - /usr/app/node_modules
+    ports:
+      - "3001:3001"
+    tty: true
+    command: "npm run start"
